@@ -8,11 +8,17 @@
 ![](https://raw.githubusercontent.com/TommyLemon/StaticResources/master/TrainSort/TrainSort-V2-NearTwicePerformanceOfBubbleSort.jpg)   
 
 <br />
-灵感来源于两列火车 A, B 相对行驶，从头对尾到头对头，<br />
+灵感来源于两列火车 A, B 相对行驶，从 头对尾 到 尾对头，<br />
 可以让 A 每节车厢都和 B 所有车厢都依次正对，<br />
 这样就覆盖了全部的正对组合情况。<br />
 如果把火车映射为数组，车厢映射为数组元素，<br />
 且两个数组一样，就能实现自身所有元素两两之间的对比（车厢正对）。<br />
+最早取名为 火车交错排序算法，后面发现没必要对齐后再超过 length 来继续对比，<br />
+直接从 头对尾 到 并列减一，也就是 1 至 length - 1，<br />
+即可覆盖全部组合情况，并且对比次数减半，<br />
+所以改名为 火车跟进排序算法。 <br />
+<br />
+
 <br />
 性能有待继续对比测试，但理论上远超冒泡排序，<br >
 而且它的特性和火车加速出站很像，<br />
