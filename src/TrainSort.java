@@ -65,17 +65,17 @@ public class TrainSort {
         int compareCount = 0;
 
         if (arr != null && arr.length > 1) {
-            for (int i = 0; i < 2 * arr.length - 1; i++) {  //头对尾 -> 尾对头
+            for (int i = 0; i < arr.length - 1; i++) {  //头对尾 -> 头对头(差一个位，因为不需要相同下标元素（自己和自己）对比)
 //                            System.out.println("  <<<<<<<<<<< trainCrossingSort  for i = " + i + " {");
 
-                int innerSize = i%arr.length; //完全正对时，自己比较自己没有意义 (i + 1)%arr.length;
+//                int innerSize = i%arr.length; //完全正对时，自己比较自己没有意义 (i + 1)%arr.length;
                 //boolean isClosing = i <arr.length;
 
-                for (int j = 0; j <= innerSize; j++) {  //重叠部分车厢，一对一对比
+                for (int j = 0; j <= i; j++) {  //重叠部分车厢，一对一对比
                     compareCount++;
 //                                    System.out.println("   <<<<< trainCrossingSort  for j = " + j + " {");
 
-                    int k = j - 1 - innerSize + arr.length;
+                    int k = j - 1 - i + arr.length;
 
 //                                    System.out.print("    trainCrossingSort i = " + i + "; j = " + j + "; k = " + k + "; compareCount = " + compareCount + " >> ");
 //                                            System.out.println("      trainCrossingSort  k >= 0 && k < arr.length && j < arr.length >> ");
