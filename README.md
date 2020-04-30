@@ -1,5 +1,5 @@
 # TrainSort
-火车交错排序法，对比次数从 0 递增到 length - 1<br />
+火车跟进排序法，对比次数从 1 递增到 length - 1，<br />
 呈直角三角形（冒泡排序、选择排序是长方形，每回对比次数固定），<br />
 对比次数为 N(N-1)/2，远低于冒泡排序 N(N-1) 次，性能是冒泡排序的两倍！<br />
 <br />
@@ -8,7 +8,7 @@
 ![](https://raw.githubusercontent.com/TommyLemon/StaticResources/master/TrainSort/TrainSort-V2-NearTwicePerformanceOfBubbleSort.jpg)   
 
 <br />
-灵感来源于两列火车 A, B 相对行驶，从头对尾到尾对头，<br />
+灵感来源于两列火车 A, B 相对行驶，从头对尾到头对头，<br />
 可以让 A 每节车厢都和 B 所有车厢都依次正对，<br />
 这样就覆盖了全部的正对组合情况。<br />
 如果把火车映射为数组，车厢映射为数组元素，<br />
