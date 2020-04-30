@@ -26,5 +26,6 @@
 又或许经过改进或者用它的思想去改进其它算法，能达到超过快排的效率。<br />
 <br />
 目前未找到业内已有同样的实现，如果有请告知我，<br />
+或者如果本项目中有任何错误敬请指正，<br />
 可以是提 [Issue](https://github.com/TommyLemon/TrainSort/issues/new) 或发我 邮箱 tommylemon@qq.com，<br />
 非常感谢！<br />
