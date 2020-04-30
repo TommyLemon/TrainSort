@@ -1,8 +1,10 @@
 # TrainSort
 火车跟进排序算法，对比次数从 1 递增到 length - 1，<br />
-对比次数为 N(N-1)/2，是类似冒泡排序的一种实现。<br />
+对比次数为 N(N-1)/2，是类似冒泡排序的一种实现，<br />
+比较元素从相邻（j 和 j+1）变成了相对（j 和 length-1-j）。<br />
 <br />
 
+以下图中关于冒泡排序的说明有误，只有最差的冒泡排序才是 N(N-1) ，减少了重复对比的冒泡排序也是 N(N-1)/2。
 ![](https://raw.githubusercontent.com/TommyLemon/StaticResources/master/TrainSort/TrainSort-Principle.jpg)   
 ![](https://raw.githubusercontent.com/TommyLemon/StaticResources/master/TrainSort/TrainSort-V2-NearTwicePerformanceOfBubbleSort.jpg)   
 
